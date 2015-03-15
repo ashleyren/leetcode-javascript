@@ -11,9 +11,9 @@ var twoSum = function(numbers, target) {
         return [];
     }
     for(var i = 0; i < len; i++){
-        var rest = target - numbers[i];
-        if(map[rest] !== undefined && map[rest] !== i){
-            return  [i+1, map[rest]+1]; 
+        var value = target - numbers[i];
+        if(map[value] !== undefined && map[value] !== i){
+            return  [i+1, map[value]+1]; 
         } 
     }
     return [];
