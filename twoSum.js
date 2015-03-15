@@ -5,7 +5,7 @@
  */
 var twoSum = function(numbers, target) {
     var len = numbers.length;  
-    //since javascript does not have buildin HashMap, so we make out hashmap object.
+    //since javascript does not have buildin HashMap, so we make our hashmap object.
     var map = toObject(numbers); 
     if(len < 2){
         return [];
